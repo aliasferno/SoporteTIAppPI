@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "682097132104",
+    "project_id": "soportetiapp-af",
+    "storage_bucket": "soportetiapp-af.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:682097132104:android:b85b36b6953eb3a5ff4e7d",
+        "android_client_info": {
+          "package_name": "com.aliasferno.soportetiapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "682097132104-kdepjmpsefgelacv1pgjcm1t996imo8j.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aliasferno.soportetiapp",
+            "certificate_hash": "9bdb6f19896ce78904dd621338c38909432273b3"
+          }
+        },
+        {
+          "client_id": "682097132104-c9r5balkmdfb7iqhoo3oagf4lijp9gv6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVTARixR8rynMMmiv3-osc3PuA2I_TWj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "682097132104-c9r5balkmdfb7iqhoo3oagf4lijp9gv6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

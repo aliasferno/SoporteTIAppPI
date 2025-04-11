@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ticketListFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.aliasferno.soportetiapp.HomeFragment"
+        android:label="Inicio"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_openTicketFragment"
+            app:destination="@id/openTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ticketListFragment"
+        android:name="com.aliasferno.soportetiapp.TicketListFragment"
+        android:label="Lista de Tickets"
+        tools:layout="@layout/fragment_ticket_list">
+        <action
+            android:id="@+id/action_ticketListFragment_to_newTicketFragment"
+            app:destination="@id/newTicketFragment" />
+        <action
+            android:id="@+id/action_ticketListFragment_to_openTicketFragment"
+            app:destination="@id/openTicketFragment" />
+        <action
+            android:id="@+id/action_ticketListFragment_to_statsFragment"
+            app:destination="@id/statsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/newTicketFragment"
+        android:name="com.aliasferno.soportetiapp.NewTicketFragment"
+        android:label="Nuevo Ticket"
+        tools:layout="@layout/fragment_new_ticket" />
+    <fragment
+        android:id="@+id/openTicketFragment"
+        android:name="com.aliasferno.soportetiapp.OpenTicketFragment"
+        android:label="Ver Ticket"
+        tools:layout="@layout/fragment_open_ticket">
+        <argument
+            android:name="ticketId"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/notificationsFragment"
+        android:name="com.aliasferno.soportetiapp.NotificationsFragment"
+        android:label="Notificaciones"
+        tools:layout="@layout/fragment_notifications">
+        <action
+            android:id="@+id/action_notificationsFragment_to_openTicketFragment"
+            app:destination="@id/openTicketFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/statsFragment"
+        android:name="com.aliasferno.soportetiapp.StatsFragment"
+        android:label="Estadísticas"
+        tools:layout="@layout/fragment_stats" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.aliasferno.soportetiapp.ProfileFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_profile" />
+</navigation>
